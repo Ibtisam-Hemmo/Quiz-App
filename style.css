@@ -105,10 +105,40 @@
     margin-top: 20px;
 }
 
+
+#container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#container h1{
+    margin-top: 70px;
+}
 #rules{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 47%;
+    height: 368px;
+    margin: auto;
+    background-color: #6c95b5;
+    margin-top: 20px;
+    border-radius: 10px;
+    line-height: 41px;
+    padding: 19px;
+}
+
+#start-button{
+    background-color: #526bbd;
+    letter-spacing: 3px;
+    color: white;
+    padding: 5px 66px;
+    border-radius: 47px;
+    margin: 13px;
+    text-decoration: none;
 }
