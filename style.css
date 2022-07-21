@@ -65,7 +65,7 @@ body {
     background: var(--main-color);
     border-radius: 1rem;
 }
-  
+
 #question{  
     margin-bottom: 18px;
 }
@@ -96,7 +96,7 @@ body {
 .choice-text {
     padding: 1rem;
     width: 100%;
-    background-color:var(--main-color);
+    background-color:#3f576a;
     border-radius:8px;
 }
 
