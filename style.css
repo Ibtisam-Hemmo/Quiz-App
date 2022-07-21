@@ -2,9 +2,8 @@
 
 :root {
     background-color: #023047;
-    --main-color: #219ebc;
+    --main-color: #6c95b5;
     --secondary-color: #ffb703;
-
 }
 
 * {
@@ -12,4 +11,79 @@
     padding: 0;
     font-family: 'Poppins','Times New Roman', Times, serif; ;
     box-sizing: border-box;
+    color: #fff;
+}
+
+
+        /* Styling questions div */
+
+.container{
+    margin-top:100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#question{
+    margin-bottom: 18px;
+}
+
+.questions{
+    background-color:  var(--main-color);
+    padding: 32px;
+    max-width: 70%;
+    border-radius: 5px;
+}
+
+.choice-container {
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 23px;
+    width: 99%;
+    background-color: rgb(200 225 225 / 50%);
+    border-radius: 10px;
+}
+
+.choice-container:hover {
+    box-shadow: 0 6.5px 22.5px 0 rgba(2, 48, 71,0.5);
+    transform: scale(1.02);
+    transition: transform 100ms;
+    cursor: pointer;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+
+        /* Styling question bar and score  */
+        
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+    font-size: 26px;
+
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+}
+
+#progressBar {
+    width: 178px;
+    height: 30px;
+    border: 0.2rem solid rgb(112, 199, 112);
+    border-radius: 30px;
+    margin-left: 18px;
+}
+
+#progressBarFull {
+    background: rgb(111, 212, 111);
+    width: 0%;
+    height: 100%;
 }
