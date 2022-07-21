@@ -59,7 +59,13 @@ body {
 
 /* ----------------- */
 
-/* #question{
+#questions {
+    padding: 1rem;
+    background: var(--main-color);
+    border-radius: 1rem;
+}
+  
+#question{  
     margin-bottom: 18px;
 }
 
@@ -87,14 +93,14 @@ body {
 }
 
 .choice-text {
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
-} */
+}
 
 
         /* Styling question bar and score  */
         
-/* .list {
+.list {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -120,11 +126,11 @@ body {
     background: rgb(111, 212, 111);
     width: 0%;
     height: 100%;
-} */
+}
 
 
 /* Styling End page */
-/* .box{
+.box{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,10 +140,10 @@ body {
 
 .box p{
     margin-top: 20px;
-} */
+}
 
 /* leader Board */
-/* #leader-board {
+#leader-board {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,4 +193,50 @@ body {
     border-radius: 5px;
     border: 0;
     cursor: pointer;
-} */
+}
+
+/* ------------ */
+#yourName {
+    outline: 1px solid;
+    width: 600px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  padding: 0 2.2rem;
+  border-radius: 10px;
+  background-color: var(--main-color);
+}
+
+#yourName label {
+    font-size: 2rem;
+}
+  
+input {
+    font-size: 1.5rem;
+    padding: .25rem .8rem;
+    outline: none;
+    color: black;
+}
+
+.leader-board .btns {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.btn.back, .btn.start {
+    background-color: var(--secondary-color);
+    width: 6rem;
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .btn.back:hover, .btn.start:hover {
+    background-color: rgb(112, 111, 111);
+    color: #FFF;
+  }
