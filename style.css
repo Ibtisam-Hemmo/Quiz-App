@@ -23,6 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
 }
 
 #question{
@@ -30,9 +31,9 @@
 }
 
 .questions{
-    background-color:  var(--main-color);
+    background-color: rgb(53, 110, 138) ;
     padding: 32px;
-    max-width: 70%;
+    /* max-width: 70%; */
     border-radius: 5px;
 }
 
@@ -46,7 +47,7 @@
 }
 
 .choice-container:hover {
-    box-shadow: 0 6.5px 22.5px 0 rgba(2, 48, 71,0.5);
+    box-shadow: 0 6.5px 22.5px 0 rgba(2, 47, 70, 0.502);
     transform: scale(1.02);
     transition: transform 100ms;
     cursor: pointer;
@@ -55,6 +56,8 @@
 .choice-text {
     padding: 2rem;
     width: 100%;
+    background-color:var(--main-color);
+    border-radius:8px;
 }
 
 
@@ -100,4 +103,12 @@
 
 .box p{
     margin-top: 20px;
+}
+
+#rules{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
 }
