@@ -112,7 +112,9 @@ let questions = [
     }
 ];
 
-const question = document.querySelector("#question");
+const questionwl = document.querySelector("#question");
+console.log(question);
+questionwl.innerHTML=questions[question];
 const choices = Array.from(document.querySelectorAll(".choice-text"));//to form an array of the li elements *choices*
 const progressText = document.querySelector("#progressText"); //for adding question number
 // const name = document.querySelector("#name");
@@ -121,17 +123,31 @@ const progressBarFull = document.querySelector("#progressBarFull"); // To show t
 let score = 0; // as a start of the quiz, the score will be zero
 let counter = 0; // It is incremented when answering a question
 const score_Points = 100;
-const max_Questions = 10;
+const questions_Number = 10;
 
+const question_pointer = {};
 
-function startQuiz(){
-    counter = 0;
-    score = 0;
-    getQuestion();
-};
+// const questionsIndex = Math.floor(questions.length);
+// question_pointer = questions[questionsIndex];
+// console.log(question_pointer);
+// question.innerText = question_pointer;
 
-function getQuestion(){
+// function startQuiz(){
+//     counter = 0;
+//     score = 0;
+//     getQuestion();
+// };
 
-};
+// function getQuestion(){
+//     // after answeing every question, the progress bar will have its color
+//     counter++;
+//     progressText.innerText = `Question ${counter} of ${questions_Number}`;
+//     progressBarFull.style.width = `${(counter / questions_Number) * 100}%`;
 
-startQuiz();
+// };
+
+// function answerQuestion(){
+    
+// }
+
+// startQuiz();
