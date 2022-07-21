@@ -14,19 +14,59 @@
     color: #fff;
 }
 
-
-        /* Styling questions div */
-
-.container{
-    margin-top:100px;
-    margin-bottom: 20px;
+body {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
 }
 
-#question{
+
+/* first page */
+#welcome-page {
+    background-color: var(--main-color);
+    outline: 1px solid;
+    width: 600px;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+#welcome-page .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-page .rules {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+#welcome-page .btn {
+    width: 5rem;
+    padding: .5rem 1.2rem;
+    background-color: var(--secondary-color);
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+
+/* ----------------- */
+
+#questions {
+    padding: 1rem;
+    background: var(--main-color);
+    border-radius: 1rem;
+}
+  
+#question{  
     margin-bottom: 18px;
 }
 
@@ -54,7 +94,7 @@
 }
 
 .choice-text {
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     background-color:var(--main-color);
     border-radius:8px;
@@ -105,40 +145,101 @@
     margin-top: 20px;
 }
 
-
-#container{
-    margin: auto;
+/* leader Board */
+#leader-board {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    width: 100vw;
+    height: 100vh;
 }
 
-#container h1{
-    margin-top: 70px;
-}
-#rules{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 47%;
-    height: 368px;
-    margin: auto;
-    background-color: #6c95b5;
-    margin-top: 20px;
+#leader-board .container {
+    background-color: var(--main-color);
     border-radius: 10px;
-    line-height: 41px;
-    padding: 19px;
+    width: 600px;
+    min-height: 135px;
+    overflow: hidden;
 }
 
-#start-button{
-    background-color: #526bbd;
-    letter-spacing: 3px;
-    color: white;
-    padding: 5px 66px;
-    border-radius: 47px;
-    margin: 13px;
-    text-decoration: none;
+#leader-board h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: .6rem;
 }
+
+#leader-board .player-info {
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem 1rem;
+    
+    border-bottom: 1px solid #1986a1;
+
+}
+
+#leader-board .player-info:first-child {
+    background-color: var(--secondary-color);
+    color: black;
+    margin-top: 0;
+    padding: .8rem 1rem;
+}
+
+#leader-board .btn {
+    background-color: var(--secondary-color);
+    color: #000;
+    width: 6rem;
+    height: 3rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+/* ------------ */
+#yourName {
+    outline: 1px solid;
+    width: 600px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  padding: 0 2.2rem;
+  border-radius: 10px;
+  background-color: var(--main-color);
+}
+
+#yourName label {
+    font-size: 2rem;
+}
+  
+input {
+    font-size: 1.5rem;
+    padding: .25rem .8rem;
+    outline: none;
+    color: black;
+}
+
+.leader-board .btns {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.btn.back, .btn.start {
+    background-color: var(--secondary-color);
+    width: 6rem;
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .btn.back:hover, .btn.start:hover {
+    background-color: rgb(112, 111, 111);
+    color: #FFF;
+  }
