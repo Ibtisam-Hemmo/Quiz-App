@@ -101,3 +101,57 @@
 .box p{
     margin-top: 20px;
 }
+
+/* leader Board */
+#leader-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#leader-board .container {
+    background-color: var(--main-color);
+    border-radius: 10px;
+    width: 600px;
+    min-height: 135px;
+    overflow: hidden;
+}
+
+#leader-board h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: .6rem;
+}
+
+#leader-board .player-info {
+    /* outline: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem 1rem;
+    
+    border-bottom: 1px solid #1986a1;
+
+}
+
+#leader-board .player-info:first-child {
+    background-color: var(--secondary-color);
+    color: black;
+    margin-top: 0;
+    padding: .8rem 1rem;
+}
+
+#leader-board .btn {
+    background-color: var(--secondary-color);
+    color: #000;
+    width: 6rem;
+    height: 3rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
