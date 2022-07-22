@@ -82,7 +82,7 @@ body {
     font-size: 25px;
     margin-bottom: 23px;
     width: 99%;
-    background-color: rgb(200 225 225 50%);
+    background-color: rgba(83, 92, 92, 0.5);
     border-radius: 10px;
 }
 
