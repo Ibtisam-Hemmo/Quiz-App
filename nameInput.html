@@ -10,14 +10,15 @@
 <body>
 
   <section id="yourName">
-    <label for="name">Your name: <input type="text" id="name"></label>
+    <label for="name">Your name: <input type="text" id="name" required></label>
+    <span id="alert"></span>
     <nav class="btns">
       <a class="btn back" href="./index.html">Back</a>
-      <a class="btn start" href="./home.html" onclick="inputUserName()">Start</a>
+      <a class="btn start"  id="inputName" >Start</a>
     </nav>
   </section>
 
-  <script src="app.js"></script>
+  
   <script src="main.js"></script>
 </body>
 </html>

@@ -1,52 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Questions</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body>
     <div id="questions">
-        <div class="list">
-            <div class="list-item">
-                <p id="progressText">
-                    Question
-                </p>
-                <div id="progressBar">
-                    <div id="progressBarFull"></div>
-                </div>
-            </div>
-
-            <div class="list-item">
-                <p>
-                    Your name
-                </p>
-            </div>
+      <div class="list">
+        <div class="list-item">
+          <p id="progressText">Question</p>
+          <div id="progressBar">
+            <h4>10 / </h4>
+            <div id="progressBarFull"></div>
+          </div>
         </div>
 
-        <!-- <h1 id="question">What is the answer to the question?</h1>
-        <div class="choice-container">
-            <p class="choice-text" data-number="1"> Choice 1</p>
+        <div class="list-item">
+          <p id="_name">Your name</p>
         </div>
-        <div class="choice-container">
-            <p class="choice-text" data-number="2"> Choice 2</p>
-        </div>
-        <div class="choice-container">
-            <p class="choice-text" data-number="3"> Choice 3</p>
-        </div>
-        <div class="choice-container">
-            <p class= "choice-text" data-number="4"> Choice 4</p>
-        </div> -->
+      </div>
+
+      <section id="full-question"></section>
+      <div id="next"></div>
     </div>
 
     <script src="app.js"></script>
-
-    <script src="main.js"></script>
-    <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>

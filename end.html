@@ -13,11 +13,18 @@
             <p>
                 Thanks for completing this Quiz
             </p>
-            <p>
-                You score is : <h4 id="score"></h4>
-            </p>
+            <div id="score-section">
+               <h4>You score is :</h4>  <h2 id="score"></h2>
+            </div>
+            <a class="btn start" href="./leaderBoard.html" id="leader-board-button">Leader Board</a>
+
         </div>
     </div>
-    <!-- <script src="main.js"></script> -->
+     <script >
+        const element=document.getElementById('score');
+        let score = window.location.href.split("?")[1].split("=")[1];
+
+        element.innerText=score;
+    </script> 
 </body>
 </html>
