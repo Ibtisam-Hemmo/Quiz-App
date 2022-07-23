@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/quiz-icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <title>End Page</title>
 </head>
@@ -13,17 +14,19 @@
             <p>
                 Thanks for completing this Quiz
             </p>
+            <img src="./assets/completed.png" alt="" class="end-img">
             <div id="score-section">
-               <h4>You score is :</h4>  <h2 id="score"></h2>
+                <h4>You score is :</h4>  <h2 id="score"></h2><br>
             </div>
+            <p style="margin:20px; font-size: 15px;">You could check the leader board down below to see your rank</p>
+
             <a class="btn start" href="./leaderBoard.html" id="leader-board-button">Leader Board</a>
 
         </div>
     </div>
-     <script >
+    <script >
         const element=document.getElementById('score');
         let score = window.location.href.split("?")[1].split("=")[1];
-
         element.innerText=score;
     </script> 
 </body>

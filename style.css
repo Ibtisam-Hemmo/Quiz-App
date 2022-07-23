@@ -57,10 +57,39 @@ body {
   border-radius: 5px;
 }
 
+
+/* Styling input page */
+#yourName {
+  outline: 1px solid;
+  width: 600px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2.2rem;
+  border-radius: 10px;
+  background-color: var(--main-color);
+}
+
+#yourName label {
+  font-size: 2rem;
+}
+
+input {
+  font-size: 22px;
+  padding: 0.25rem 0.8rem;
+  outline: none;
+  color: black;
+}
+
+a{
+  text-decoration: none;
+}
 /* ----------------- */
 
 #questions {
-  width: 90%;
+  width: 40%;
   padding: 1rem;
   background: var(--main-color);
   border-radius: 1rem;
@@ -107,6 +136,7 @@ body {
 
 .list {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 20px;
@@ -120,12 +150,10 @@ body {
 
 #progressBar {
   display: flex;
-  justify-content: center;
   width: 100px;
   height: 30px;
-  border: 0.2rem solid rgb(112, 199, 112);
-  border-radius: 30px;
-  font-size: 20px;
+  color:rgb(112, 199, 112);
+  font-size: 22px;
 }
 
 #progressBarFull {
@@ -218,30 +246,6 @@ color: red;
   cursor: pointer;
 }
 
-/* ------------ */
-#yourName {
-  outline: 1px solid;
-  width: 600px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 2.2rem;
-  border-radius: 10px;
-  background-color: var(--main-color);
-}
-
-#yourName label {
-  font-size: 2rem;
-}
-
-input {
-  font-size: 1.5rem;
-  padding: 0.25rem 0.8rem;
-  outline: none;
-  color: black;
-}
 
 .leader-board .btns {
   display: flex;
@@ -260,8 +264,18 @@ input {
   border: none;
 }
 
+#next{
+  margin-left: auto;
+}
 .btn.back:hover,
 .btn.start:hover {
   background-color: rgb(112, 111, 111);
   color: #fff;
+}
+
+
+.end-img{
+  width: 41%;
+  margin: 20px;
+  border-radius: 11px;
 }
